@@ -1,15 +1,15 @@
 ---
-date created: Tuesday, August 30th, 2022 12:54:49 pm
-date modified: Tuesday, August 30th, 2022 12:55:18 pm
-title: o3-entry
+date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
+date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
+title: <% tp.file.title %>
 aliases:
-  - "o3-entry"
+  - "<% tp.file.title %>"
 ---
 Status::
 Tags:: #writings/bookapplications
 ___
 
-# o3-entry
+# <% tp.file.title %>
 
 ## Top 3 Quotes
 
@@ -79,4 +79,4 @@ What are the crucial points in this book that make it iconic, ideas I want to re
 - 
 
 ___
-Created:: Tuesday, August 30th, 2022 12:54:49 pm
+Created:: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>

@@ -3,7 +3,7 @@ Tags:
 Links: [[💭 My Thoughts]]
 ___
 
-# o3-entry
+# <% tp.file.title %>
 
 ## Context
 - <% tp.file.cursor(4) %>
@@ -21,4 +21,4 @@ ___
 - <% tp.file.cursor(8) %>
 
 ___
-Created::  2022-08-30 12:08
+Created::  <%tp.date.now("YYYY-MM-DD HH:MM")%>

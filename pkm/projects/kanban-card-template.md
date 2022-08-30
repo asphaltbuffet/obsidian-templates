@@ -1,3 +1,3 @@
-# o3-entry
+# <%tp.file.title%>
 
 ## Notes

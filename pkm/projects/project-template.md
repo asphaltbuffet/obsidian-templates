@@ -3,10 +3,16 @@ Tags: #projects
 Links: [[🚧 My Projects]]
 ___
 
-# o3-entry
+# <% tp.file.title %>
 Deadline:: <% tp.file.cursor(2) %>
 Area:: 
-
+<%*
+	const dir = "10 Projects/" + tp.file.title + "/";
+	if (!tp.file.exists(dir)) {
+		await this.app.vault.createFolder(dir)
+	}
+	await tp.file.move(dir + tp.file.title)
+%>
 ## Kanbans
 ```button
 name Create Kanban
@@ -24,7 +30,7 @@ action QuickAdd: 📌 Create Kanban
 
 ```dataview
 list
-from [[o3-entry]] and !outgoing([[o3-entry]])
+from [[<%tp.file.title%>]] and !outgoing([[<%tp.file.title%>]])
 ```
 
 ### External Links
@@ -53,4 +59,4 @@ from [[o3-entry]] and !outgoing([[o3-entry]])
 - 
 
 ___
-Created:: 2022-08-30 12:55
+Created:: <%tp.date.now("YYYY-MM-DD HH:mm") %>

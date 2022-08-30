@@ -3,7 +3,7 @@ Tags:: #🗺️
 Links:: <% tp.file.cursor(2) %>
 ___
 
-# o3-entry
+# <%tp.file.title%>
 
 ## Notes
 - <% tp.file.cursor(3) %>
@@ -13,14 +13,14 @@ ___
 ### Notes
 
 ```dataview
-list from [[o3-entry]] AND !outgoing([[o3-entry]]) AND !#input and !#thoughts
+list from [[<%tp.file.title%>]] AND !outgoing([[<%tp.file.title%>]]) AND !#input and !#thoughts
 ```
 
 ### Inputs
 
 ```dataview
 table Tags as Type, Links, Created
-from [[o3-entry]] AND #input
+from [[<%tp.file.title%>]] AND #input
 sort Tags desc
 ```
 
@@ -28,11 +28,11 @@ sort Tags desc
 
 ```dataview
 table Created
-from [[o3-entry]] AND #thoughts
+from [[<%tp.file.title%>]] AND #thoughts
 sort file.mtime desc
 ```
 
 ___
 References:
 
-Created:: 2022-08-30 12:55
+Created:: <% tp.date.now("YYYY-MM-DD HH:mm") %>
