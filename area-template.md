@@ -1,27 +1,27 @@
 Tags:: #area
 Links:: [[My Areas]]
 ___
-# <%tp.file.title%>
+# 🚧 My Projects
 ## Queries
 ### Projects
 ```dataview
 table Deadline
-FROM #🚧 AND [[<%tp.file.title%>]]
+FROM #🚧 AND [[🚧 My Projects]]
 SORT Deadline asc
 ```
 ### Inputs
 ```dataview
 table Status, Author
-FROM #i AND [[<%tp.file.title%>]]
+FROM #i AND [[🚧 My Projects]]
 SORT file.mtime desc
 ```
 ### Notes
 ```dataview
 table Created
-FROM [[<%tp.file.title%>]] AND !#🚧 AND !#📥
+FROM [[🚧 My Projects]] AND !#🚧 AND !#📥
 SORT file.mtime desc
 ```
 
 ___
 
-Created:: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+Created:: 2022-08-29 23:44

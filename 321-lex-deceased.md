@@ -1,6 +1,6 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
+date created: Monday, August 29th, 2022 11:42:49 pm
+date modified: Monday, August 29th, 2022 11:44:39 pm
 aliases: 
 tags: member deceased
 member:
