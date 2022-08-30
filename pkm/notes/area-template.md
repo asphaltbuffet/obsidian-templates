@@ -1,7 +1,7 @@
 Tags:: #area
 Links:: [[⛰ My Areas]]
 ___
-# <%tp.file.title%>
+# o3-entry
 
 ## Queries
 
@@ -9,7 +9,7 @@ ___
 
 ```dataview
 table Deadline
-FROM #🚧 AND [[<%tp.file.title%>]]
+FROM #🚧 AND [[o3-entry]]
 SORT Deadline asc
 ```
 
@@ -17,7 +17,7 @@ SORT Deadline asc
 
 ```dataview
 table Status, Author
-FROM #i AND [[<%tp.file.title%>]]
+FROM #i AND [[o3-entry]]
 SORT file.mtime desc
 ```
 
@@ -25,10 +25,10 @@ SORT file.mtime desc
 
 ```dataview
 table Created
-FROM [[<%tp.file.title%>]] AND !#🚧 AND !#📥
+FROM [[o3-entry]] AND !#🚧 AND !#📥
 SORT file.mtime desc
 ```
 
 ___
 
-Created:: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+Created:: 2022-08-30 12:55

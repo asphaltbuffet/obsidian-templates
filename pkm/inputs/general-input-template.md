@@ -1,5 +1,5 @@
 ---
-started: <%tp.date.now("YYYY-MM-DD")%>
+started: 2022-08-30
 finished: 
 rating: 
 ---
@@ -9,7 +9,7 @@ Tags:: #input<% tp.file.cursor(3) %>
 Links:: <% tp.file.cursor(4) %>
 ___
 
-# <% tp.file.title %>
+# o3-entry
 
 [Link](<% tp.file.cursor(6) %>)
 
@@ -40,4 +40,4 @@ ___
 - 
 
 ___
-Created:: <%tp.date.now("YYYY-MM-DD HH:MM") %>
+Created:: 2022-08-30 12:08

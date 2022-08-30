@@ -1,5 +1,5 @@
 ---
-started: <%tp.date.now("YYYY-MM-DD")%>
+started: 2022-08-30
 finished:
 rating:
 ---
@@ -8,9 +8,9 @@ Author:: [[]]
 Tags:: #input/book
 Links:: <% tp.file.cursor(3) %>
 ___
-# <%tp.file.title%>
+# o3-entry
 > [!INFO] Application Note
-> [[<%tp.file.title%> Application]]
+> [[o3-entry Application]]
 ## Notes
 %% Add notes from reading that are not tied to specific passages here. %%
 - 
@@ -20,4 +20,4 @@ ___
 - 
 
 ___
-Created:: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
+Created:: Tuesday, August 30th, 2022 12:54:49 pm
