@@ -1,45 +1,16 @@
-<%* let statusType = await tp.system.suggester(["Backlog 🟥","Consuming 🟧", "Processing", "Finished", "Paused ⬛"], ["Backlog 🟥","Consuming 🟧", "Processing 🟨", "Finished 🟩", "Paused ⬛"], false, "Select current status") %>
-<%-* if (statusType === "Backlog 🟥") { %>
-tp.file.cursor_append("🟥")
-<%-* } else if (statusType === "Consuming 🟧") { %>
-tp.file.cursor_append("🟧")
-<%-* } else if (statusType === "Processing 🟨") { %
-tp.file.cursor_append("🟨")
-<%-* } else if (statusType === "Finished 🟩") { %>
-tp.file.cursor_append("🟩")
-<%-* } else if (statusType === "Paused ⬛") { %>
-tp.file.cursor_append("⬛")
-<%-* } %>
-<%* } -%>
-
-<%* let statusType = await tp.system.suggester(["Backlog","Consuming", "Processing", "Paused"], ["Backlog","Consuming", "Processing", "Finished", "Paused"], false, "Select current status") %>
-<%-* if (statusType === "Backlog") { %>
-tp.file.cursor_append("🟥")
-<%-* } else if (statusType === "Consuming") { %>
-tp.file.cursor_append("🟧")
-<%-* } else if (statusType === "Processing") { %
-tp.file.cursor_append("🟨")
-<%-* } else if (statusType === "Finished") { %>
-tp.file.cursor_append("🟩")
-<%-* } else if (statusType === "Paused") { %>
-tp.file.cursor_append("⬛")
-<%-* } %>
-<%* } -%>
-
-<% *
-	let statusType = await tp.system.suggester(
-		["Backlog", "Consuming", "Processing", "Paused"], 
-		["Backlog", "Consuming", "Processing", "Finished", "Paused"], 
-		false, "Select current status")
-	if (statusType === "Backlog") {
-	  tp.file.cursor_append("🟥")
-	} else if (statusType === "Consuming") {
-	  tp.file.cursor_append("🟧")
-	} else if (statusType === "Processing") {
-	  tp.file.cursor_append("🟨")
-	} else if (statusType === "Finished") {
-	  tp.file.cursor_append("🟩")
-	} else if (statusType === "Paused") {
-	  tp.file.cursor_append("⬛")
+function set_status(tenv) {
+	let statusType = await tenv.system.suggester(["Backlog 🟥","Consuming 🟧", "Processing", "Finished", "Paused ⬛"], ["Backlog 🟥","Consuming 🟧", "Processing 🟨", "Finished 🟩", "Paused ⬛"], false, "Select current status")
+	
+	if (statusType === "Backlog 🟥") {
+		tenv.file.cursor_append("🟥")
+	} else if (statusType === "Consuming 🟧") {
+		tenv.file.cursor_append("🟧")
+	} else if (statusType === "Processing 🟨") {
+		tenv.file.cursor_append("🟨")
+	} else if (statusType === "Finished 🟩") {
+		tenv.file.cursor_append("🟩")
+	} else if (statusType === "Paused ⬛") {
+		tenv.file.cursor_append("⬛")
 	}
-%>
+}
+module.exports = set_status;
