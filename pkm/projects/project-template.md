@@ -7,7 +7,7 @@ ___
 Deadline:: <% tp.file.cursor(2) %>
 Area:: 
 <%*
-	const dir = "10 Projects/" + tp.file.title + "/";
+	let dir = "10 Projects/" + tp.file.title + "/";
 	if (!tp.file.exists(dir)) {
 		await this.app.vault.createFolder(dir)
 	}

@@ -16,7 +16,7 @@ magazine:
 title: LEX Issue <% issueLink %>
 ---
 
-[[30-correspondence/31-lex-issues/PREV|❮❮]] ⋮ [[letters-MOC|Vol<% volumeLink %>]] ⋮ [[30-correspondence/31-lex-issues/NEXT|❯❯]]
+[[30-correspondence/31-lex-issues/PREV|❮❮]] ⋮ [[active-letter-exchanges|Vol<% volumeLink %>]] ⋮ [[30-correspondence/31-lex-issues/NEXT|❯❯]]
 
 # LEX Issue <% issueLink %>
 
