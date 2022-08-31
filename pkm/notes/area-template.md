@@ -17,7 +17,7 @@ SORT Deadline asc
 
 ```dataview
 table Status, Author
-FROM #i AND [[<%tp.file.title%>]]
+FROM #input AND [[<%tp.file.title%>]]
 SORT file.mtime desc
 ```
 
@@ -30,5 +30,4 @@ SORT file.mtime desc
 ```
 
 ___
-
-Created:: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+<% tp.file.include([[footer]]) %>

@@ -33,6 +33,4 @@ sort file.mtime desc
 ```
 
 ___
-References:
-
-Created:: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+<% tp.file.include([[footer]]) %>

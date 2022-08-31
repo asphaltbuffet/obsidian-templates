@@ -21,4 +21,4 @@ ___
 - <% tp.file.cursor(8) %>
 
 ___
-Created::  <%tp.date.now("YYYY-MM-DD HH:MM")%>
+<% tp.file.include([[footer]]) %>

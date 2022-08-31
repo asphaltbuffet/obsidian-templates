@@ -1,6 +1,4 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
@@ -70,3 +68,6 @@ tR += navStr
 - …
 
 ^notes-link
+
+___
+<% tp.file.include([[footer]]) %>

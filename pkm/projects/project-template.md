@@ -59,4 +59,4 @@ from [[<%tp.file.title%>]] and !outgoing([[<%tp.file.title%>]])
 - 
 
 ___
-Created:: <%tp.date.now("YYYY-MM-DD HH:mm") %>
+<% tp.file.include([[footer]]) %>
