@@ -1,17 +1,17 @@
 ---
-date created: Monday, August 29th, 2022 11:42:49 pm
-date modified: Monday, August 29th, 2022 11:44:39 pm
-aliases: "🚧 My Projects"
-tags: cgap career work 2022 "🚧 My Projects"
-title: Career Goal Action Plan - 🚧 My Projects
+date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
+date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
+aliases: "<% tp.file.title %>"
+tags: cgap career work <% tp.date.now('YYYY') %> "<% tp.file.title %>"
+title: Career Goal Action Plan - <% tp.file.title %>
 ---
 
-# Career Goal Action Plan - 🚧 My Projects
+# Career Goal Action Plan - <% tp.file.title %>
 
 ## Goal
 
 %% Name of goal goes here %%
-🚧 My Projects
+<% tp.file.title %>
 
 ### Achievement Date
 

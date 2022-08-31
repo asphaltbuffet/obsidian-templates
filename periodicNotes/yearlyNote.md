@@ -1,18 +1,29 @@
 ---
-date created: Monday, August 29th, 2022 11:42:49 pm
-date modified: Monday, August 29th, 2022 11:44:39 pm
-aliases:  
-tags: yearly_note Invalid date
+date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
+date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
+aliases: <%*
+var fileDate = moment(tp.file.title, 'YYYY');
+// moment dates are mutable 
+let prevYear = moment(fileDate).subtract(1, 'y').format('YYYY');
+let nextYear = moment(fileDate).add(1, 'y').format('YYYY');
+let yearLink = fileDate.format('YYYY');
+-%> 
+tags: yearly_note <% yearLink %>
 ---
 
-[[20-periodic-notes/25-yearly/Invalid date|❮❮]] ⋮ [[20-periodic-notes/25-yearly/Invalid date|Invalid date]] ⋮ [[20-periodic-notes/25-yearly/Invalid date|❯❯]]
+<%*
+// ❮❮ ⋮ 2021 ⋮ ❯❯ 
+// [[path/to/file|display_text]] 
+let navStr = `[[20-periodic-notes/25-yearly/${prevYear}|❮❮]] ⋮ [[20-periodic-notes/25-yearly/${yearLink}|${yearLink}]] ⋮ [[20-periodic-notes/25-yearly/${nextYear}|❯❯]]`;
+tR += navStr 
+%>
 
-# 🚧 My Projects
-### :fas_bed:  Sleep
+# <% tp.file.title %>
+### 💤 Sleep
 
 ```dataviewjs
 const calendarData = { 
-	year: Invalid date,
+	year: <% yearLink %>,
 	colors: {   // optional, defaults to first value
 	  blue:        ["#8cb9ff","#69a3ff","#428bff","#1872ff","#0058e2"], // this first entry is considered default
 	  green:       ["#c6e48b","#7bc96f","#49af5d","#2e8840","#196127"],
@@ -43,10 +54,10 @@ renderHeatmapCalendar(this.container, calendarData)
 
 ```
 
-### :fas_heart:  Love
+### 💕 Love
 ```dataviewjs
 const calendarData = { 
-	year: Invalid date,
+	year: <% yearLink %>,
 	colors: {   // optional, defaults to first value
 	  blue:        ["#8cb9ff","#69a3ff","#428bff","#1872ff","#0058e2"], // this first entry is considered default
 	  green:       ["#c6e48b","#7bc96f","#49af5d","#2e8840","#196127"],
