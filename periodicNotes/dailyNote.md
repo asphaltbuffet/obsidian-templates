@@ -25,12 +25,12 @@ tR += navStr
 
 # <% tp.file.title %>
 
-## :fas_calendar_check: Agenda
+## 📅 Agenda
 
 > [!calendar]+
 > ![[<% moment(fileDate).format('YYYY-MM') %>#^<% moment(fileDate).format('YYYYMMDD') %>]]
 
-## :fas_list_check:  Tasks
+## ✔ Tasks
 
 > [!overdue]+
 > ```tasks
@@ -63,11 +63,12 @@ tR += navStr
 > short mode
 > ```
 
-## :fas_pen_nib: Notes
+## ✒ Notes
 
 - …
 
 ^notes-link
 
 ___
-<% tp.file.include([[footer]]) %>
+Created:: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
+Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`

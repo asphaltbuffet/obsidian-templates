@@ -1,6 +1,4 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
 aliases: 
 <%*
 var fileDate = moment(tp.file.title, 'YYYY-MM');
@@ -18,13 +16,13 @@ tags: monthly_note <% monthLink %> <% quarterLink %> <% yearLink %>
 <%*
 // ❮❮ ⋮ 2021 › Q4 ⋮ ❯❯ 
 // [[path/to/file|display_text]] 
-let navStr = `[[20-periodic-notes/23-monthly/${prevMonth}|❮❮]] ⋮ [[20-periodic-notes/25-yearly/${yearLink}|${yearLink}]] › [[20-periodic-notes/24-quarterly/${quarterLink}|${fileDate.format('[Q]Q')}]] ⋮ [[20-periodic-notes/23-monthly/${nextMonth}|❯❯]]`;
+let navStr = `[[periodic-notes/23-monthly/${prevMonth}|❮❮]] ⋮ [[periodic-notes/25-yearly/${yearLink}|${yearLink}]] › [[periodic-notes/24-quarterly/${quarterLink}|${fileDate.format('[Q]Q')}]] ⋮ [[periodic-notes/23-monthly/${nextMonth}|❯❯]]`;
 tR += navStr 
 %>
 
 # <% tp.file.title %>
 
-## :fas_calendar: Month at a Glance
+## 📆 Month at a Glance
 [[20-periodic-notes/21-daily/<% moment(fileDate).add(0, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
 - No preplanned events.
 
@@ -185,16 +183,16 @@ tR += navStr
 
 ^<% moment(fileDate).add(31, 'd').format('YYYYMMDD') %>
 
-## :fas_pen_nib: Notes
+## ✒ Notes
 - …
 
 
-## :fas_check_square: Completed Tasks
+## ✅ Completed Tasks
 ```tasks
 
 done after <% moment(fileDate).subtract(1,'month').endOf('month').format('YYYY-MM-DD') %>
 done before <% moment(fileDate).add(1,'month').startOf('month').format('YYYY-MM-01') %>
-path does not include 99-templates
+path does not include 99 Templates
 
 sort by done
 ```
