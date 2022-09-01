@@ -80,4 +80,5 @@ What are the crucial points in this book that make it iconic, ideas I want to re
 - 
 
 ___
-<% tp.file.include([[footer]]) %>
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`

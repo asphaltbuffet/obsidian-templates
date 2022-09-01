@@ -25,7 +25,7 @@ tR += navStr
 
 # <% weekLink %>
 
-## :fas_calendar_week: Summary
+## 📆 Summary
 
 - [[20-periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]dddd') %>]]
   ![[<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd') %>#^notes-link]]
@@ -42,8 +42,14 @@ tR += navStr
 - [[20-periodic-notes/21-daily/<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]dddd') %>]]
   ![[<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd') %>#^notes-link]]
   
-## :fas_pen_nib: Notes
+## ✒ Notes
 
 - …
 
 ^notes-link
+
+___
+>[!info]
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`
+
