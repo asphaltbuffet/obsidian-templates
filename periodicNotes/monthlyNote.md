@@ -1,10 +1,7 @@
 ---
-aliases: 
-<%*
+aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY-MM');
 // moment dates are mutable 
-let prevMonth = moment(fileDate).subtract(1, 'M').format('YYYY-MM');
-let nextMonth = moment(fileDate).add(1, 'M').format('YYYY-MM');
 let yearLink = fileDate.format('YYYY');
 let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
@@ -14,13 +11,12 @@ tags: monthly_note <% monthLink %> <% quarterLink %> <% yearLink %>
 ---
 
 <%*
-// ❮❮ ⋮ 2021 › Q4 ⋮ ❯❯ 
-// [[path/to/file|display_text]] 
-let navStr = `[[periodic-notes/23-monthly/${prevMonth}|❮❮]] ⋮ [[periodic-notes/25-yearly/${yearLink}|${yearLink}]] › [[periodic-notes/24-quarterly/${quarterLink}|${fileDate.format('[Q]Q')}]] ⋮ [[periodic-notes/23-monthly/${nextMonth}|❯❯]]`;
+let navStr = `**[[periodic-notes/25-yearly/${yearLink}|Y]]** ⋮ **[[periodic-notes/25-yearly/${quarterLink}|Q]]** ⋮⋮ [[periodic-notes/23-monthly/${yearLink}-01|1]] ⋮ [[periodic-notes/23-monthly/${yearLink}-02|2]] ⋮ [[periodic-notes/23-monthly/${yearLink}-03|3]] ⋮ [[periodic-notes/23-monthly/${yearLink}-04|4]] ⋮ [[periodic-notes/23-monthly/${yearLink}-05|5]] ⋮ [[periodic-notes/23-monthly/${yearLink}-06|6]] ⋮ [[periodic-notes/23-monthly/${yearLink}-07|7]] ⋮ [[periodic-notes/23-monthly/${yearLink}-08|8]] ⋮ [[periodic-notes/23-monthly/${yearLink}-09|9]] ⋮ [[periodic-notes/23-monthly/${yearLink}-10|10]] ⋮ [[periodic-notes/23-monthly/${yearLink}-11|11]] ⋮ [[periodic-notes/23-monthly/${yearLink}-12|12]] ^${monthLink}nav`;
 tR += navStr 
 %>
+%% Highlight current month manually. %%
 
-# <% tp.file.title %>
+# <% moment(fileDate).format('MMMM YYYY') %>
 
 ## 📆 Month at a Glance
 [[20-periodic-notes/21-daily/<% moment(fileDate).add(0, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]

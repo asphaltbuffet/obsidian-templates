@@ -12,7 +12,7 @@ ___
 
 ## 3 Sentence Summary
 
-What are the crucial points in this book that make it iconic, ideas I want to remember for the rest of my life?
+%% What are the crucial points in this book that make it iconic, ideas I want to remember for the rest of my life? %%
 1. 
 2. 
 3. 
@@ -81,4 +81,4 @@ What are the crucial points in this book that make it iconic, ideas I want to re
 
 ___
 Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>

@@ -25,6 +25,8 @@ tR += navStr
 
 # <% weekLink %>
 
+
+
 ## 📆 Summary
 
 - [[20-periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]dddd') %>]]
