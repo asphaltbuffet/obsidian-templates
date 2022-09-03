@@ -1,22 +1,10 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
-aliases: <%*
-var fileDate = moment(tp.file.title, 'YYYY');
-// moment dates are mutable 
-let prevYear = moment(fileDate).subtract(1, 'y').format('YYYY');
-let nextYear = moment(fileDate).add(1, 'y').format('YYYY');
-let yearLink = fileDate.format('YYYY');
--%> 
-tags: yearly_note <% yearLink %>
+aliases:  
+title: <% tp.file.title %>
 ---
-
-<%*
-// ❮❮ ⋮ 2021 ⋮ ❯❯ 
-// [[path/to/file|display_text]] 
-let navStr = `[[20-periodic-notes/25-yearly/${prevYear}|❮❮]] ⋮ [[20-periodic-notes/25-yearly/${yearLink}|${yearLink}]] ⋮ [[20-periodic-notes/25-yearly/${nextYear}|❯❯]]`;
-tR += navStr 
-%>
+Tags:: yearly_note <% tp.file.title %>
+Links:: 
+___
 
 # <% tp.file.title %>
 ### 💤 Sleep
@@ -86,4 +74,10 @@ for(let page of dv.pages('"20-periodic-notes/21-daily"').where(p=>p.tracking.lov
 */
 renderHeatmapCalendar(this.container, calendarData)
 
+```
+
+___
+```ad-fileInfo 
+Created:: 2022-03-23 20:33
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 ```

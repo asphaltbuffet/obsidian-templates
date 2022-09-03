@@ -1,6 +1,6 @@
-Status: #thoughts/<% tp.file.cursor(2) %>
-Tags: 
-Links: [[💭 My Thoughts]]
+Status:: 
+Tags::  #thoughts/<% tp.file.cursor(2) %>
+Links:: [[💭 My Thoughts]]
 ___
 
 # <% tp.file.title %>
@@ -21,5 +21,7 @@ ___
 - <% tp.file.cursor(8) %>
 
 ___
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`
+```ad-fileInfo 
+Created:: 2022-08-30 11:44
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```
