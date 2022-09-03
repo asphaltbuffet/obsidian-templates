@@ -1,30 +1,24 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
 aliases: <%*
 let volumeLink = tp.system.prompt("Volume:", "2", false);
 let seasonLink = tp.system.prompt("Season:", "Winter", false);
 let yearLink = tp.system.prompt("Year:", tp.date.now('YYYY'), false);
 let issueLink = tp.system.prompt("Issue:", "", false);
 %>
-tags: issue lex volume<% volumeLink %> issue<% issueLink %> <% seasonLink %> <% yearLink %>
-magazine:
+lex:
   volume: <% volumeLink %>
   issue: <% issueLink %>
   season: <% seasonLink %>
   year: <% yearLink %>
-title: LEX Issue <% issueLink %>
+title: LEX \#<% issueLink %>,  <% seasonLink %> <% yearLink %>
 ---
+Status:: 
+Links:: [[🗺 Letter Exchange MOC]]
 
-[[30-correspondence/31-lex-issues/PREV|❮❮]] ⋮ [[active-letter-exchanges|Vol<% volumeLink %>]] ⋮ [[30-correspondence/31-lex-issues/NEXT|❯❯]]
 
-# LEX Issue <% issueLink %>
+# LEX \#<% issueLink %>,  <% seasonLink %> <% yearLink %>
 
-![[30-correspondence/31-lex-issues/attachments/LEX-<% issueLink %>.png|500]]
-
-```toc
-  max_depth: 2
-```
+![[correspondence/31-lex-issues/attachments/LEX-<% issueLink %>.png|500]]
 
 ## ART & PHOTOGRAPHY
 
@@ -94,3 +88,8 @@ title: LEX Issue <% issueLink %>
 
 ## WORK & CAREERS
 
+___
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```
