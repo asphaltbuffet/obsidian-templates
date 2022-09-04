@@ -3,7 +3,7 @@ aliases:
 tags: member
 title: 
 ---
-Status:: #:luc_user:/❌
+Status:: #👤/❌
 Name::
 ___
 

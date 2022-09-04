@@ -9,7 +9,7 @@ let status = await tp.system.suggester(["Active", "Inactive", "Deceased"], ["�
 -%> 
 title: <% personNumber %> - <% personName %>
 ---
-Status:: #:luc_user:/<% status %>
+Status:: #👤/<% status %>
 Locale:: <% location %>
 Name:: <% personName %>
 ___
@@ -33,7 +33,7 @@ SORT Date DESC
 ## Completed
 ```dataview
 
-TABLE Date, Status
+TABLE Date, Tags as "Type", Status
 FROM #✉
 WHERE correspondent = [[<% tp.file.title %>]]
 SORT Date DESC

@@ -11,7 +11,6 @@ Tags:: #✉
 Status:: #📥<% tp.file.cursor(2) %>📤
 Date:: <% fileDate.format('YYYY-MM-DD') %>
 Correspondent:: [[<% personLink %>]]
-Antecedent:: [[<% tp.file.cursor(3) %>]]
 ___
 
 # Correspondence on <% fileDate.format('MMM D, YYYY') %>
