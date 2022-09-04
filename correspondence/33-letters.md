@@ -4,24 +4,27 @@ var fileDate = moment(tp.file.title, 'YYYY-MM-DD');
 // moment dates are mutable 
 let personLink = tp.file.title.split("_")[1]
 -%> 
-tags: letter
-title: Correspondence from <% fileDate.format('MMM D, YYYY') %>
+title: Correspondence on <% fileDate.format('MMM D, YYYY') %>
 ---
-Status:: #✉/<% tp.file.cursor(2) %>
+
+Tags:: #✉
+Status:: #📥<% tp.file.cursor(2) %>📤
 Date:: <% fileDate.format('YYYY-MM-DD') %>
-Correspondent:: <% personLink %>
-Antecedent:: <% tp.file.cursor(3) %>
+Correspondent:: [[<% personLink %>]]
+Antecedent:: [[<% tp.file.cursor(3) %>]]
 ___
 
-# Correspondence from <% fileDate.format('MMM D, YYYY') %>
+# Correspondence on <% fileDate.format('MMM D, YYYY') %>
 
 ## Image
 
-[[30-correspondence/33-letters/attachments/<% tp.file.title %>.pdf|<% tp.file.title %>.pdf]]
+[[correspondence/33-letters/attachments/<% tp.file.title %>.pdf|<% tp.file.title %>.pdf]]
 
 ## Transcription
-
-*Letter has not been transcribed.*
+```ad-quote
+title: 
+Letter has not been transcribed.
+```
 
 ___
 ```ad-fileInfo 

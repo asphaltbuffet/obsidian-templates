@@ -3,7 +3,7 @@ started: <%tp.date.now("YYYY-MM-DD")%>
 finished:
 rating:
 ---
-Status:: #📥/<% tp.file.cursor(2) %>
+Status:: #📖/<% tp.file.cursor(2) %>
 Author:: [[]]
 Tags:: #input/book
 Links:: <% tp.file.cursor(3) %>
