@@ -5,7 +5,7 @@ var fileDate = moment(tp.file.title, 'YYYY-MM-DD');
 let personLink = tp.file.title.split("_")[1]
 -%> 
 tags: letter
-title: Correspondence
+title: Correspondence from <% fileDate.format('MMM D, YYYY') %>
 ---
 Status:: #✉/<% tp.file.cursor(2) %>
 Date:: <% fileDate.format('YYYY-MM-DD') %>
@@ -13,7 +13,7 @@ Correspondent:: <% personLink %>
 Antecedent:: <% tp.file.cursor(3) %>
 ___
 
-# Correspondence
+# Correspondence from <% fileDate.format('MMM D, YYYY') %>
 
 ## Image
 

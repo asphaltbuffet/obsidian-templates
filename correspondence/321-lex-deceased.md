@@ -1,13 +1,30 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
 aliases: 
-tags: member deceased
-member:
-  active: false
-  name: Unknown
+tags: member
 title: 
 ---
+Status:: #:luc_user:/❌
+Name::
+___
 
+# <% personNumber %>
 > [!deceased]- Unknown
 > …details…
+
+# Mail
+
+```dataview
+
+LIST WITHOUT ID 
+"[[" + file.path + "|" + letter.date + "]] " + letter.direction 
+FROM #letter OR #postcard 
+WHERE letter.person = "<% personNumber %>"
+SORT letter.date DESC
+
+```
+
+___
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```

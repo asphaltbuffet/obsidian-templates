@@ -6,14 +6,14 @@ let personNumber = tp.file.title;
 let personName = tp.system.prompt("Name:", "Unknown", false);
 let location = tp.system.suggester(["USA", "International"], ["domestic", "international"]);
 -%> 
-tags: lex
-member:
-  active: <% tp.system.suggester(["Active", "Inactive"], ["true", "false"]) %>
-  memberName: <% personName %>
-title: <% personNumber %>
+title: <% personNumber %> - <% personName %>
 ---
+Status:: #:luc_user:/<% tp.system.suggester(["Active", "Inactive", “Deceased”], ["🟢", "🟡", “🔴”]) %>
+Locale:: <% location %>
+Name:: <% personName %>
+___
 
-# <% personNumber %>
+# <% personNumber %> - <% personName %>
 
 > [!<% location %>] <% personName %>
 > …address…
@@ -28,4 +28,15 @@ FROM #letter OR #postcard
 WHERE letter.person = "<% personNumber %>"
 SORT letter.date DESC
 
+```
+
+# Lex Issues
+```dataview
+TABLE 
+FROM #issue 
+WHERE file.inlinks()
+```
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 ```
