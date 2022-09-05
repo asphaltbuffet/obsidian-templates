@@ -9,18 +9,19 @@ let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
 let weekLink = fileDate.format('gggg-[W]ww'); 
 -%> "<% tp.file.title %>"
-tags: daily_note <% fileDate.format("YYYYMMDD") %> <% weekLink %> <% monthLink %> <% quarterLink %> <% yearLink %> 
+tags: daily_note 
 tracking:
   love: false
   sleep: <% tp.system.prompt("Sleep (hrs):", "0", false) %>
 title: <% tp.file.title %>
 ---
-
 <%*
-// ❮❮ ⋮ 2021 › Q4 › 12 › W49 ⋮ ❯❯ 
-// [[path/to/file|display_text]] 
-let navStr = `[[20-periodic-notes/21-daily/${prevDay}|❮❮]] ⋮ [[20-periodic-notes/25-yearly/${yearLink}|${yearLink}]] › [[20-periodic-notes/24-quarterly/${quarterLink}|${fileDate.format('[Q]Q')}]] › [[20-periodic-notes/23-monthly/${monthLink}|${fileDate.format('MMM')}]] › [[20-periodic-notes/22-weekly/${weekLink}|${fileDate.format('[W]ww')}]] ⋮ [[20-periodic-notes/21-daily/${nextDay}|❯❯]]`;
-tR += navStr 
+let monStr = `![[${monthLink}#^${monthLink}nav]]`;
+tR += monStr
+%>
+<%*
+let weekStr = `![[${weekLink}#^${weekLink}nav]]`;
+tR += weekStr
 %>
 
 # <% tp.file.title %>

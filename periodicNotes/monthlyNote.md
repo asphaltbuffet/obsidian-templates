@@ -7,7 +7,7 @@ let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
 let monthDays = moment(fileDate).daysInMonth();
 -%> 
-tags: monthly_note <% monthLink %> <% quarterLink %> <% yearLink %> 
+tags: monthly_note
 ---
 
 <%*
@@ -191,4 +191,9 @@ done before <% moment(fileDate).add(1,'month').startOf('month').format('YYYY-MM-
 path does not include 99 Templates
 
 sort by done
+```
+___
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 ```
