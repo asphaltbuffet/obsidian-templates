@@ -17,6 +17,13 @@ tR += monStr
 
 [[periodic-notes/22-weekly/<% moment(fileDate).format('gggg-[W]ww') %>|<% moment(fileDate).format('[W]ww') %>]] ⁞⁞ <% moment(fileDate).weekday(0).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(1).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(2).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(3).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(4).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(5).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(6).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD') %>]] ^<% moment(fileDate).format('gggg-[W]ww') %>nav
 
+<%*
+let firstDay = moment(fileDate).startOf('month')
+let endDay = moment(fileDate).endOf('month')
+// start with first day, print week, add 7 days, print week if in same month, repeat
+
+tR += 
+%>
 ## 📆 Summary
 
 - [[periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]dddd') %>]]
