@@ -22,6 +22,10 @@ let firstDay = moment(fileDate).startOf('month')
 let endDay = moment(fileDate).endOf('month')
 // start with first day, print week, add 7 days, print week if in same month, repeat
 
+do {
+
+}
+while ( curMonth == fileDate.format('MM') )
 tR += 
 %>
 ## 📆 Summary
