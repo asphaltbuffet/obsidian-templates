@@ -2,10 +2,10 @@
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
-let yearLink = fileDate.format('YYYY');
-let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
-let weekLink = fileDate.format('gggg-[W]ww'); 
+let weekLink = fileDate.format('gggg-[W]ww');
+let dayLink = fileDate.format('YYYYMMDD');
+let dateLink = fileDate.format('YYYY-MM-DD');
 %>
 tracking:
   love: false
@@ -16,14 +16,22 @@ Tags:: #📅/daily
 Links:: 
 ___
 
-![[<% weekLink %>#^<% weekLink%>%nav]]
+![[<% weekLink %>#^<% weekLink%>nav]]
 
 # <% moment(fileDate).format('dddd, MMMM Do YYYY') %>
 
 ## 📅 Agenda
 
+### 🎈 Birthdays
+```dataview
+TABLE Name, Birthday
+FROM #👤
+WHERE dateformat(Birthday, "MM-DD") = dateformat(<% dateLink %>, "MM-DD")
+SORT Birthday ASC
+```
+
 > [!calendar]+
-> ![[<% moment(fileDate).format('YYYY-MM') %>#^<% moment(fileDate).format('YYYYMMDD') %>]]
+> ![[<% monthLink %>#^<% dayLink %>]]
 
 ## ✔ Tasks
 
@@ -31,7 +39,7 @@ ___
 > ```tasks
 > not done
 > path does not include 99-templates
-> due before <% fileDate.format('YYYY-MM-DD') %>
+> due before <% dateLink %>
 > limit 5
 > ```
 
@@ -41,7 +49,7 @@ ___
 > not done
 > path does not include 99-templates
 >
-> due on <% moment(fileDate).format('YYYY-MM-DD') %>
+> due on <% dateLink %>
 >
 > short mode
 > ```
@@ -52,7 +60,7 @@ ___
 > not done
 > path does not include 99-templates
 >
-> due after <% moment(fileDate).format('YYYY-MM-DD') %>
+> due after <% dateLink %>
 > due before <% moment(fileDate).add(1, 'w').format('YYYY-MM-DD') %>
 >
 > short mode
