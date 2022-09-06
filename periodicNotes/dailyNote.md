@@ -30,18 +30,16 @@ WHERE dateformat(Birthday, "MM-DD") = dateformat(<% dateLink %>, "MM-DD")
 SORT Birthday ASC
 ```
 
-> [!calendar]+
-> ![[<% monthLink %>#^<% dayLink %>]]
 
 ## ✔ Tasks
 
-> [!overdue]+
-> ```tasks
-> not done
-> path does not include 99-templates
-> due before <% dateLink %>
-> limit 5
-> ```
+
+```tasks
+not done
+path does not include 99-templates
+due before <% dateLink %>
+limit 5
+```
 
 > [!unfinished]+
 >
