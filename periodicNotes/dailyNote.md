@@ -2,29 +2,23 @@
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
-let prevDay = moment(fileDate).subtract(1, 'd').format('YYYY.MM.DD - ddd');
-let nextDay = moment(fileDate).add(1, 'd').format('YYYY.MM.DD - ddd');
 let yearLink = fileDate.format('YYYY');
 let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
 let weekLink = fileDate.format('gggg-[W]ww'); 
--%> "<% tp.file.title %>"
-tags: daily_note 
+%>
 tracking:
   love: false
   sleep: <% tp.system.prompt("Sleep (hrs):", "0", false) %>
 title: <% tp.file.title %>
 ---
-<%*
-let monStr = `![[${monthLink}#^${monthLink}nav]]`;
-tR += monStr
-%>
-<%*
-let weekStr = `![[${weekLink}#^${weekLink}nav]]`;
-tR += weekStr
-%>
+Tags:: #📅/daily
+Links:: 
+___
 
-# <% tp.file.title %>
+![[<% weekLink %>#^<% weekLink%>%nav]]
+
+# <% moment(fileDate).format('dddd, MMMM Do YYYY') %>
 
 ## 📅 Agenda
 

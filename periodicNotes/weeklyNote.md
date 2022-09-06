@@ -5,44 +5,47 @@ var fileDate = moment(tp.file.title, 'gggg-[W]ww');
 // moment dates are mutable 
 let monthLink = fileDate.format('gggg-MM');
 let weekLink = fileDate.format('gggg-[W]ww');
+let day0Text = moment(fileDate).weekday(0).format('dd');
+let day0Link = moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]DD');
+let day1Text = moment(fileDate).weekday(1).format('dd');
+let day1Link = moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd[|]DD');
+let day2Text = moment(fileDate).weekday(2).format('dd');
+let day2Link = moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd[|]DD');
+let day3Text = moment(fileDate).weekday(3).format('dd');
+let day3Link = moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd[|]DD');
+let day4Text = moment(fileDate).weekday(4).format('dd');
+let day4Link = moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd[|]DD');
+let day5Text = moment(fileDate).weekday(5).format('dd');
+let day5Link = moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]DD');
+let day6Text = moment(fileDate).weekday(6).format('dd');
+let day6Link = moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD');
 -%>
-tags: weekly_note
 ---
+Tags:: #📅/weekly
+Links:: 
+___
 
-<%*
-let monStr = `![[${monthLink}#^${monthLink}nav]]`;
-tR += monStr
-%>
-# Week <% moment(fileDate).format('ww - MMMM gggg') %>
+![[<% monthLink %>#^<% monthLink %>nav]]
 
-[[periodic-notes/22-weekly/<% moment(fileDate).format('gggg-[W]ww') %>|<% moment(fileDate).format('[W]ww') %>]] ⁞⁞ <% moment(fileDate).weekday(0).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(1).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(2).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(3).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(4).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(5).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]DD') %>]] ⁞ <% moment(fileDate).weekday(6).format('dd') %> [[periodic-notes/21-daily/<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD') %>]] ^<% moment(fileDate).format('gggg-[W]ww') %>nav
+**[[<% weekLink %>|W]]** ⁞⁞ <% day0Text %> [[<% day0Link %>]] ⁞ <% day1Text %> [[<% day1Link %>]] ⁞ <% day2Text %> [[<% day2Link %>]] ⁞ <% day3Text %> [[<% day3Link %>]] ⁞ <% day4Text %> [[<% day4Link %>]] ⁞ <% day5Text %> [[<% day5Link %>]] ⁞ <% day6Text %> [[<% day6Link %>]] ^<% weekLink %>nav
 
-<%*
-let firstDay = moment(fileDate).startOf('month')
-let endDay = moment(fileDate).endOf('month')
-// start with first day, print week, add 7 days, print week if in same month, repeat
+# Week <% moment(fileDate).format('w - MMMM gggg') %>
 
-do {
-
-}
-while ( curMonth == fileDate.format('MM') )
-tR += 
-%>
 ## 📆 Summary
 
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(0).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(1).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(2).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(3).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(4).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd') %>#^notes-link]]
-- [[periodic-notes/21-daily/<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]dddd') %>]]
+- [[periodic-notes/21-daily/<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD[]]] dddd') %>
   ![[<% moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd') %>#^notes-link]]
   
 ## ✒ Notes
@@ -52,7 +55,7 @@ tR +=
 ^notes-link
 
 ___
->[!info]
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`
-
+```ad-fileInfo 
+Created:: 2022-03-23 20:33
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```
