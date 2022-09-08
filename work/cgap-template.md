@@ -1,10 +1,11 @@
 ---
-date created: <% tp.file.creation_date('dddd, MMMM Do, YYYY h:mm:ss a') %>
-date modified: <% tp.date.now('dddd, MMMM Do, YYYY h:mm:ss a') %>
-aliases: "<% tp.file.title %>"
-tags: cgap career work <% tp.date.now('YYYY') %> "<% tp.file.title %>"
+aliases: 
+  - "<% tp.file.title %>"
 title: Career Goal Action Plan - <% tp.file.title %>
 ---
+Tags:: #work #cgap #career/plan
+Areas:: 
+___
 
 # Career Goal Action Plan - <% tp.file.title %>
 
@@ -63,3 +64,9 @@ title: Career Goal Action Plan - <% tp.file.title %>
   - EXPECTED BENEFIT
 - [ ] Task 3 #cgap 📅 2022-09-21
   - EXPECTED BENEFIT
+
+___
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```

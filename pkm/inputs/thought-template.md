@@ -22,6 +22,6 @@ ___
 
 ___
 ```ad-fileInfo 
-Created:: 2022-08-30 11:44
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
 Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 ```

@@ -25,14 +25,24 @@ ___
 ### 🎈 Birthdays
 ```dataview
 TABLE Name, Birthday
-FROM #👤
-WHERE dateformat(Birthday, "MM-DD") = dateformat(<% dateLink %>, "MM-DD")
+FROM #Birthday
+WHERE dateformat(date(Birthday), "MM-DD") = dateformat(date("<% dateLink %>"), "MM-DD")
 SORT Birthday ASC
 ```
 
+### ⏰ Morning
+
+- …
+
+### 🕜 Afternoon
+
+- …
+
+### 🌙 Evening
+
+- …
 
 ## ✔ Tasks
-
 
 ```tasks
 not done
@@ -41,29 +51,6 @@ due before <% dateLink %>
 limit 5
 ```
 
-> [!unfinished]+
->
->```tasks
-> not done
-> path does not include 99-templates
->
-> due on <% dateLink %>
->
-> short mode
-> ```
-
-> [!due-soon]-
->
->```tasks
-> not done
-> path does not include 99-templates
->
-> due after <% dateLink %>
-> due before <% moment(fileDate).add(1, 'w').format('YYYY-MM-DD') %>
->
-> short mode
-> ```
-
 ## ✒ Notes
 
 - …
@@ -71,5 +58,7 @@ limit 5
 ^notes-link
 
 ___
-Created:: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
-Modified:: `=dateformat(this.file.mtime,"yyyy-MM-dd HH:mm")`
+```ad-fileInfo 
+Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+```
