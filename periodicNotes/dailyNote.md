@@ -6,7 +6,10 @@ let monthLink = fileDate.format('YYYY-MM');
 let weekLink = fileDate.format('gggg-[W]ww');
 let dayLink = fileDate.format('YYYYMMDD');
 let dateLink = fileDate.format('YYYY-MM-DD');
+let datePretty = fileDate.format('dddd, MMMM Do YYYY')
 %>
+  - <% dateLink %>
+  - <% datePretty %>
 tracking:
   love: false
   sleep: <% tp.system.prompt("Sleep (hrs):", "0", false) %>
@@ -18,7 +21,14 @@ ___
 
 ![[<% weekLink %>#^<% weekLink%>nav]]
 
-# <% moment(fileDate).format('dddd, MMMM Do YYYY') %>
+# <% datePretty %>
+
+
+## ✒ Notes
+
+- …
+
+^notes-link
 
 ## 📅 Agenda
 
@@ -41,21 +51,6 @@ SORT Birthday ASC
 ### 🌙 Evening
 
 - …
-
-## ✔ Tasks
-
-```tasks
-not done
-path does not include 99-templates
-due before <% dateLink %>
-limit 5
-```
-
-## ✒ Notes
-
-- …
-
-^notes-link
 
 ___
 ```ad-fileInfo 
