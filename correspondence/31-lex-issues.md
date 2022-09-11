@@ -1,24 +1,20 @@
 ---
-aliases: <%*
-let volumeLink = tp.system.prompt("Volume:", "2", false);
-let seasonLink = tp.system.prompt("Season:", "Winter", false);
-let yearLink = tp.system.prompt("Year:", tp.date.now('YYYY'), false);
-let issueLink = tp.system.prompt("Issue:", "", false);
-%>
-lex:
-  volume: <% volumeLink %>
-  issue: <% issueLink %>
-  season: <% seasonLink %>
-  year: <% yearLink %>
-title: LEX \#<% issueLink %>,  <% seasonLink %> <% yearLink %>
+aliases: 
+magazine:
+  volume: 2
+  issue: <% tp.file.title.split(" ")[1] %>
+  season: <% tp.system.suggester(["❄ Winter", "🌞 Summer", "🍂 Autumn"], ["❄", "🌞", "🍂"]) %>
+  year: <% tp.system.prompt("Year", 2023, false) %>
+title: <% tp.file.title %>
 ---
-Status:: 
-Links:: [[🗺 Letter Exchange MOC]]
+Status:: #📖/🟥 
+Tags:: #issue 
+Links:: [[🗺 LEX Issues]]
+___
 
+# <% tp.file.title %>
 
-# LEX \#<% issueLink %>,  <% seasonLink %> <% yearLink %>
-
-![[correspondence/31-lex-issues/attachments/LEX-<% issueLink %>.png|500]]
+![[correspondence/31-lex-issues/attachments/LEX-<% tp.file.title.split(" ")[1] %>.png|500]]
 
 ## ART & PHOTOGRAPHY
 
