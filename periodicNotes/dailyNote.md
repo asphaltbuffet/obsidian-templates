@@ -32,14 +32,6 @@ ___
 
 ## 📅 Agenda
 
-### 🎈 Birthdays
-```dataview
-TABLE Name, Birthday
-FROM #Birthday
-WHERE dateformat(date(Birthday), "MM-DD") = dateformat(date("<% dateLink %>"), "MM-DD")
-SORT Birthday ASC
-```
-
 ### ⏰ Morning
 
 - …
