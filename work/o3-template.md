@@ -1,15 +1,15 @@
 ---
 aliases: 
-title: # <% tp.file.title %>
+title: O3 - <% tp.file.title.slice(14) %>
 ---
 Status:: 
-Date:: <% tp.file.cursor(1) %>
-Person:: [[<% tp.file.title.slice(3) %>]]
+Date:: <% tp.file.title.split(" ")[1] %>
+Person:: [[<% tp.file.title.slice(14) %>]]
 Tags:: #o3 <% tp.file.cursor(3) %>
 Links:: [[🗺 O3 MOC]]
 ___
 
-# <% tp.file.title %>
+# O3 - <% tp.file.title.slice(14) %>
 
 ## My Items
 - <% tp.file.cursor(5) %>
