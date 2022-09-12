@@ -1,4 +1,4 @@
-Status:: 
+Status:: #note/🌱 
 Tags:: <% tp.file.cursor(3) %>
 Links:: [[<% tp.file.cursor(4) %>]]
 ___
