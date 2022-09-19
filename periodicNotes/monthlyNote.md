@@ -40,6 +40,7 @@ while ( moment(curDay).isSame(fileDate, 'month') ){
 %>
 ### <% moment(curDay).format('DD [|] ddd') %>
 <%*
+  curDay.add(1, 'd')
 }
 %>
 
