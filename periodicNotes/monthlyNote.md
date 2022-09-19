@@ -30,169 +30,19 @@ tR += weekNav
 
 # <% moment(fileDate).format('MMMM YYYY') %>
 
-## 📆 Month at a Glance
-[[periodic-notes/21-daily/<% moment(fileDate).add(0, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(0, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(1, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(1, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(2, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(2, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(3, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(3, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(4, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(4, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(5, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(5, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(6, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(6, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(7, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(7, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(8, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(8, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(9, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(9, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(10, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(10, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(11, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(11, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(12, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(12, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(13, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(13, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(14, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(14, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(15, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(15, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(16, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(16, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(17, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(17, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(18, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(18, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(19, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(19, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(20, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(20, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(21, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(21, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(22, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(22, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(23, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(23, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(24, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(24, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(25, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(25, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(26, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(26, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(27, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(27, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(28, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(28, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(29, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(29, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(30, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(30, 'd').format('YYYYMMDD') %>
-
-[[periodic-notes/21-daily/<% moment(fileDate).add(31, 'd').format('YYYY.MM.DD - ddd[|]DD dd') %>]]
-- No preplanned events.
-
-^<% moment(fileDate).add(31, 'd').format('YYYYMMDD') %>
-
 ## ✒ Notes
 - …
+
+## 📆 Month at a Glance
+<%*
+curDay = moment(fileDate).startOf('month');
+while ( moment(curDay).isSame(fileDate, 'month') ){
+%>
+### <% moment(curDay).format('DD [|] ddd') %>
+<%*
+}
+%>
+
 
 ## ✅ Completed Tasks
 ```tasks
