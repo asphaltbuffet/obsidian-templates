@@ -30,7 +30,7 @@ action QuickAdd: 📌 Create Kanban
 
 ```dataview
 list
-from [[<%tp.file.title%>]] and !outgoing([[<%tp.file.title%>]])
+from [[]] and !outgoing([[]])
 ```
 
 ### External Links

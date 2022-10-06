@@ -13,14 +13,14 @@ ___
 ### Notes
 
 ```dataview
-list from [[<%tp.file.title%>]] AND !outgoing([[<%tp.file.title%>]]) AND !#input and !#thoughts
+list from [[]] AND !outgoing([[]]) AND !#📖 and !#💭
 ```
 
 ### Inputs
 
 ```dataview
 table Tags as Type, Links, Created
-from [[<%tp.file.title%>]] AND #input
+from [[]] AND #📖
 sort Tags desc
 ```
 
@@ -28,7 +28,7 @@ sort Tags desc
 
 ```dataview
 table Created
-from [[<%tp.file.title%>]] AND #thoughts
+from [[]] AND #💭
 sort file.mtime desc
 ```
 

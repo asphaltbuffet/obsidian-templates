@@ -4,7 +4,7 @@ finished:
 rating: 
 ---
 
-Status:: #📖/<% tp.file.cursor(2) %>
+Status:: #📖<% tp.file.cursor(2) %>
 Tags:: #input<% tp.file.cursor(3) %>
 Links:: <% tp.file.cursor(4) %>
 ___

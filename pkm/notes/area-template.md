@@ -9,7 +9,7 @@ ___
 
 ```dataview
 table Deadline
-FROM #🚧 AND [[<%tp.file.title%>]]
+FROM #🚧 AND [[]]
 SORT Deadline asc
 ```
 
@@ -17,7 +17,7 @@ SORT Deadline asc
 
 ```dataview
 table Status, Author
-FROM #input AND [[<%tp.file.title%>]]
+FROM #📖 AND [[]]
 SORT file.mtime desc
 ```
 
@@ -25,7 +25,7 @@ SORT file.mtime desc
 
 ```dataview
 table Created
-FROM [[<%tp.file.title%>]] AND !#🚧 AND !#📥
+FROM [[]] AND !#🚧 AND !#📖
 SORT file.mtime desc
 ```
 
