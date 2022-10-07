@@ -1,9 +1,10 @@
 ---
-aliases: 
-  - "<% tp.file.title %>"
+aliases: <% tp.file.title %>
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 title: Career Goal Action Plan - <% tp.file.title %>
 ---
-Tags:: #work #cgap #career/plan
+Tags:: #cgap
 Areas:: 
 ___
 
@@ -25,13 +26,13 @@ ___
 ### Indicators of Achievement
 
 %% What are 2-3 things that will be true if you’ve reached this goal? %%
-- Indicator 1
-- Indicator 2
-- Indicator 3
+1. Indicator 1
+2. Indicator 2
+3. Indicator 3
 
 ## Personal Interests Alignment
 
-%% One personal interest that matches this goal. This helps align with personal motivation. %%
+%% 2-3 personal interests that matches this goal. This helps maintain motivation. %%
 - Interest 1
 - Interest 2
 - Interest 3
@@ -66,7 +67,4 @@ ___
   - EXPECTED BENEFIT
 
 ___
-```ad-fileInfo 
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+
