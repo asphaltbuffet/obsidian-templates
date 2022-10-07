@@ -1,5 +1,4 @@
 ---
-aliases: 
 magazine:
   volume: 2
   issue: <% tp.file.title.split(" ")[1] %>
@@ -7,8 +6,8 @@ magazine:
   year: <% tp.system.prompt("Year", 2023, false) %>
 title: <% tp.file.title %>
 ---
-Status:: #📖/🟥 
-Tags:: #issue 
+Status:: #issue/🟥 
+Tags::
 Links:: [[🗺 LEX Issues]]
 ___
 
