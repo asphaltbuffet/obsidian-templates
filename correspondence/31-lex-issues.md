@@ -1,6 +1,6 @@
 ---
-created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 magazine:
   volume: 2
   issue: <% tp.file.title.split(" ")[1] %>
@@ -86,7 +86,4 @@ ___
 ## WORK & CAREERS
 
 ___
-```ad-fileInfo 
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+

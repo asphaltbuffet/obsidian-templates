@@ -1,4 +1,6 @@
 ---
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: 
 <%*
 var fileDate = moment(tp.file.title, 'gggg-[W]ww');
@@ -55,7 +57,4 @@ ___
 ^notes-link
 
 ___
-```ad-fileInfo 
-Created:: 2022-03-23 20:33
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+

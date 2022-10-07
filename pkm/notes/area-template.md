@@ -1,6 +1,6 @@
 ---
-created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 title: <% tp.file.title %>
 ---
 Status::

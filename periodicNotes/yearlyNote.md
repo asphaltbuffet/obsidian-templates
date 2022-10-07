@@ -1,4 +1,6 @@
 ---
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
@@ -122,7 +124,4 @@ window.renderChart(chartData, this.container);
 
 Structure pulled from: [mulfok](https://github.com/mulfok/periodic-note-templates/blob/main/Scripts/CustomJS/DvCharts.js)
 ___
-```ad-fileInfo 
-Created:: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+
