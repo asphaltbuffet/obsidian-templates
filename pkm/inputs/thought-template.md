@@ -1,5 +1,11 @@
+---
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+title:
+---
+
 Status:: 
-Tags::  #thoughts/<% tp.file.cursor(2) %>
+Tags::  #💭/<% tp.file.cursor(2) %>
 Links:: [[💭 My Thoughts]]
 ___
 
@@ -21,7 +27,4 @@ ___
 - <% tp.file.cursor(8) %>
 
 ___
-```ad-fileInfo 
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+

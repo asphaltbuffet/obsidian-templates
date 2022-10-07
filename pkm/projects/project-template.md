@@ -1,3 +1,9 @@
+---
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+title:
+---
+
 Status: #🚧/🟥
 Tags: #projects
 Links: [[🚧 My Projects]]
@@ -59,7 +65,4 @@ from [[]] and !outgoing([[]])
 - 
 
 ___
-```ad-fileInfo 
-Created:: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified:: <%+ tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
-```
+

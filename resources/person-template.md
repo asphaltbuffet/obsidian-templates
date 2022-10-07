@@ -1,15 +1,22 @@
 ---
 aliases:
+created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 title: 
 Name:
   First: <% tp.file.title.split(" ")[1] %>
   Last: <% tp.file.title.split(" ")[2] %>
 ---
+
 Birthday:: <% tp.file.cursor(2) %>
 Tags:: #👤 
 ___
 
 # <% tp.file.title %>
+
+## Info
+
+Address::
 
 ## Notes
 

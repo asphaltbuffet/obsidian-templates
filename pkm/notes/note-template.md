@@ -9,7 +9,7 @@ Tags:: <% tp.file.cursor(3) %>
 Links:: [[<% tp.file.cursor(4) %>]]
 ___
 # <% tp.file.title %>
-## Principles
+## Content
 <% tp.file.cursor(5) %>
 
 ___
