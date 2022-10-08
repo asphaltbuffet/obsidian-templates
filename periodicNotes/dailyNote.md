@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
@@ -17,8 +17,8 @@ tracking:
   sleep: <% tp.system.prompt("Sleep (hrs):", "0", false) %>
 title: <% tp.file.title %>
 ---
+
 Tags:: #📅/daily
-Links:: 
 ___
 
 ![[<% weekLink %>#^<% weekLink%>nav]]

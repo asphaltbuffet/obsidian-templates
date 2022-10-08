@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 magazine:
   volume: 2
   issue: <% tp.file.title.split(" ")[1] %>
@@ -10,7 +10,7 @@ title: <% tp.file.title %>
 ---
 Status:: #issue/🟥 
 Tags::
-Links:: [[🗺 LEX Issues]]
+Links:: [[✍ LEX Issues]]
 ___
 
 # <% tp.file.title %>

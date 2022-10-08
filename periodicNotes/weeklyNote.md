@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: 
 <%*
 var fileDate = moment(tp.file.title, 'gggg-[W]ww');
@@ -23,8 +23,8 @@ let day6Text = moment(fileDate).weekday(6).format('dd');
 let day6Link = moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD');
 -%>
 ---
+
 Tags:: #📅/weekly
-Links:: 
 ___
 
 ![[<% monthLink %>#^<% monthLink %>nav]]

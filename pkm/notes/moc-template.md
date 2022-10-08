@@ -1,6 +1,7 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+aliases: 
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 title: <% tp.file.title %>
 ---
 

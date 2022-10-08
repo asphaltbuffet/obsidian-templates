@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
@@ -9,8 +9,8 @@ let quarterLink = fileDate.format('YYYY-[Q]Q');
 %> 
 title: <% yearLink %>
 ---
+
 Tags:: #📅/yearly
-Links:: 
 ___
 
 **[[<% yearLink %>|Y]]** ⁞⁞ [[<% yearLink %>-01|Jan]] ⁞ [[<% yearLink %>-02|Feb]] ⁞ [[<% yearLink %>-03|Mar]] ⁞ [[<% yearLink %>-04|Apr]] ⁞ [[<% yearLink %>-05|May]] ⁞ [[<% yearLink %>-06|Jun]] ⁞ [[<% yearLink %>-07|Jul]] ⁞ [[<% yearLink %>-08|Aug]] ⁞ [[<% yearLink %>-09|Sep]] ⁞ [[<% yearLink %>-10|Oct]] ⁞ [[<% yearLink %>-11|Nov]] ⁞ [[<% yearLink %>-12|Dec]] ^<% yearLink %>nav

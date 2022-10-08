@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY-MM');
 // moment dates are mutable 
@@ -10,8 +10,8 @@ let monthLink = fileDate.format('YYYY-MM');
 let monthDays = moment(fileDate).daysInMonth();
 -%> 
 ---
+
 Tags:: #📅/monthly
-Links:: 
 ___
 
 ![[<% yearLink %>#^<% yearLink %>nav]]

@@ -1,6 +1,6 @@
 ---
-created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.creation_date('YYYY-MM-DD'), 'YYYY-MM-DD');
 // moment dates are mutable 
@@ -11,6 +11,7 @@ let status = await tp.system.suggester(["Active", "Inactive", "Deceased"], ["ðŸŸ
 -%> 
 title: <% personNumber %> - <% personName %>
 ---
+
 Status:: #ðŸ‘¤/<% status %>
 Locale:: <% location %>
 Name:: <% personName %>
