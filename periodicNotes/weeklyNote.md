@@ -1,6 +1,4 @@
 ---
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: 
 <%*
 var fileDate = moment(tp.file.title, 'gggg-[W]ww');
@@ -22,6 +20,10 @@ let day5Link = moment(fileDate).weekday(5).format('YYYY.MM.DD - ddd[|]DD');
 let day6Text = moment(fileDate).weekday(6).format('dd');
 let day6Link = moment(fileDate).weekday(6).format('YYYY.MM.DD - ddd[|]DD');
 -%>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: weeklyNote-v2.0.0
+title: Week <% moment(fileDate).format('w - MMMM gggg') %>
 ---
 
 Tags:: #📅/weekly

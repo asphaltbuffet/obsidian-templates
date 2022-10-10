@@ -1,6 +1,4 @@
 ---
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY.MM.DD - ddd');
 // moment dates are mutable 
@@ -12,10 +10,13 @@ let datePretty = fileDate.format('dddd, MMMM Do YYYY')
 %>
   - <% dateLink %>
   - <% datePretty %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
 tracking:
   love: false
-  sleep: <% tp.system.prompt("Sleep (hrs):", "0", false) %>
-title: <% tp.file.title %>
+  sleep: <% tp.system.prompt("Sleep (hrs):", "", false) %>
+template: dailyNote-v2.0.0
+title: <% datePretty %>
 ---
 
 Tags:: #📅/daily
@@ -24,7 +25,6 @@ ___
 ![[<% weekLink %>#^<% weekLink%>nav]]
 
 # <% datePretty %>
-
 
 ## ✒ Notes
 
@@ -47,4 +47,3 @@ ___
 - …
 
 ___
-

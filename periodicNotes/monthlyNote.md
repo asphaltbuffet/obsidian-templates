@@ -1,6 +1,4 @@
 ---
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
 aliases: <%*
 var fileDate = moment(tp.file.title, 'YYYY-MM');
 // moment dates are mutable 
@@ -8,7 +6,11 @@ let yearLink = fileDate.format('YYYY');
 let quarterLink = fileDate.format('YYYY-[Q]Q');
 let monthLink = fileDate.format('YYYY-MM');
 let monthDays = moment(fileDate).daysInMonth();
--%> 
+-%>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: monthlyNote-v2.0.0
+title: <% tp.file.title %>
 ---
 
 Tags:: #📅/monthly
@@ -29,10 +31,10 @@ while (  moment(curDay).isSame(fileDate, 'month')  ) {
 weekNav += `^${monthLink}nav`;
 tR += weekNav
 %>
-
 # <% moment(fileDate).format('MMMM YYYY') %>
 
 ## ✒ Notes
+
 - …
 
 ## 📆 Month at a Glance
@@ -46,7 +48,6 @@ while ( moment(curDay).isSame(fileDate, 'month') ){
 }
 %>
 
-
 ## ✅ Completed Tasks
 ```tasks
 
@@ -58,4 +59,3 @@ sort by done
 ```
 
 ___
-
