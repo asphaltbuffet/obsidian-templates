@@ -1,6 +1,7 @@
 ---
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: meeting-notes-template-v2.0.0
 title: <% tp.file.title %>
 ---
 
@@ -14,8 +15,8 @@ ___
 
 ## Summary
 
-Attendees:: <% tp.file.cursor(7) %>
-Topics:: <% tp.file.cursor(7) %>
+Attendees:: <% tp.file.cursor(5) %>
+Topics:: <% tp.file.cursor(6) %>
 
 ## Notes
 - <% tp.file.cursor(7) %>
@@ -30,6 +31,7 @@ Topics:: <% tp.file.cursor(7) %>
 - 
 
 ### Prompts
+
 **What other ideas is this related to?**
 - 
 
@@ -40,4 +42,3 @@ Topics:: <% tp.file.cursor(7) %>
 - 
 
 ___
-

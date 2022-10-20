@@ -1,12 +1,13 @@
 ---
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: book-application-template-v2.0.0
 title:
 ---
 
-Status::
+Status:: <% tp.file.cursor(1) %>
 Tags:: #writings/bookapplications
-Links::
+Links:: <% tp.file.cursor(2) %>
 ___
 
 # <% tp.file.title %>

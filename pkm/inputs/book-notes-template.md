@@ -2,19 +2,21 @@
 started: <%tp.date.now("YYYY-MM-DD")%>
 finished:
 rating:
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: book-notes-template-v2.0.0
 title:
 ---
 
-Status:: #📖/<% tp.file.cursor(1) %>
+Status:: #📖<% tp.file.cursor(1) %>
 Author:: [[<% tp.file.cursor(2) %>]]
 Tags:: #input/book
 Links:: <% tp.file.cursor(3) %>
 ___
 
 # <%tp.file.title%>
-> [!INFO] Application Note
+
+> [!tldr] Application Note
 > [[<%tp.file.title%> Application]]
 
 ## Notes
@@ -26,4 +28,3 @@ ___
 - 
 
 ___
-

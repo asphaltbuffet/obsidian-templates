@@ -2,8 +2,9 @@
 started: <%tp.date.now("YYYY-MM-DD")%>
 finished: 
 rating: 
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: general-input-template-v2.0.0
 title:
 ---
 
@@ -33,6 +34,7 @@ ___
 - 
 
 ### Prompts
+
 **What other ideas is this related to?**
 - 
 
@@ -43,4 +45,3 @@ ___
 - 
 
 ___
-
