@@ -1,7 +1,8 @@
 ---
 aliases:
-Created: <% tp.file.creation_date("yyyy-MM-DD HH:mm") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD HH:mm") %>
+Created: <% tp.file.creation_date("yyyy-MM-DD") %>
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: person-template-v2.0.0
 title: 
 Name:
   First: <% tp.file.title.split(" ")[1] %>
@@ -9,14 +10,15 @@ Name:
 ---
 
 Birthday:: <% tp.file.cursor(2) %>
-Tags:: #👤 
+Tags:: #👤 <% tp.file.cursor(3) %>
+Links:: [[🗺 Address Book]]
 ___
 
 # <% tp.file.title %>
 
 ## Info
 
-Address::
+Address:: <% tp.file.cursor(4) %>
 
 ## Notes
 
