@@ -6,7 +6,7 @@ template: o3-template-v1.0.2
 title: O3 - <% tp.file.title.slice(14) %>
 ---
 
-Status:: #meeting/03
+Status:: #meeting/o3
 Date:: <% tp.file.title.split(" ")[1] %>
 Person:: [[👤 <% tp.file.title.slice(14) %>]]
 Tags:: #work/everactive <% tp.file.cursor(3) %>
