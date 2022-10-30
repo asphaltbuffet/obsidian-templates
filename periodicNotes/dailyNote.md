@@ -11,14 +11,13 @@ let datePretty = fileDate.format('dddd, MMMM Do YYYY')
   - <% dateLink %>
   - <% datePretty %>
 Created: <% tp.file.creation_date("yyyy-MM-DD") %>
-Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
-tracking:
-  love: false
-  sleep: <% tp.system.prompt("Sleep (hrs):", "", false) %>
-template: dailyNote-v2.0.0
+Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>  
+template: dailyNote-v2.1.0
 title: <% datePretty %>
 ---
 
+love:: false
+sleep:: <% tp.system.prompt("Sleep (hrs):", "", false) %>
 Tags:: #📅/daily
 ___
 
