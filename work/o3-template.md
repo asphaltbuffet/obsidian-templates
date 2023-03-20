@@ -2,7 +2,7 @@
 aliases: O3 - <% tp.file.title.slice(14) %>
 Created: <% tp.file.creation_date("yyyy-MM-DD") %>
 Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
-template: o3-template-v1.0.2
+template: o3-template-v1.1.0
 title: O3 - <% tp.file.title.slice(14) %>
 ---
 
@@ -16,10 +16,12 @@ ___
 # O3 - <% tp.file.title.slice(14) %>
 
 ## My Items
-- <% tp.file.cursor(5) %>
+
+Weekly Plans
+- [ ] <% tp.file.cursor(5) %>
 
 ## Their Items
-- <% tp.file.cursor(6) %>
+- …
 
 ## Notes
 - <% tp.file.cursor(7) %>
