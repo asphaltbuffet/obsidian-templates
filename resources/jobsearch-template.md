@@ -8,10 +8,10 @@ title:
 %% status will change as job search moves through process. 🟩 is ongoing, 🟨 is stalled, 🟥 is rejected %%
 Status:: #application/<% tp.file.cursor(2) %>
 Tags:: #jobsearch
-source:: <% tp.file.cursor(2) %>
-job-posting:: <% tp.file.cursor(2) %>
+source:: <% tp.file.cursor(3) %>
+job-posting:: <% tp.file.cursor(4) %>
 date-applied:: <% tp.file.creation_date("yyyy-MM-DD") %>
-follow-up:: <% tp.file.cursor(2) %>
+follow-up:: <% tp.file.cursor(5) %>
 Links:: [[🗺 Job Hunting MOC]]
 ___
 
@@ -21,13 +21,13 @@ ___
 
 ### Company
 
-[Company Website](<% tp.file.cursor(2) %>)
+[Company Website](<% tp.file.cursor(6) %>)
 
 > *can put a brief description of company here…*
 
 ### Compensation
 
-Salary:: <% tp.file.cursor(2) %>
+Salary:: <% tp.file.cursor(7) %>
 
 ## Application
 
