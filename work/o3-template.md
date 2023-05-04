@@ -9,7 +9,7 @@ title: O3 - <% tp.file.title.slice(14) %>
 Status:: #meeting/o3
 Date:: <% tp.file.title.split(" ")[1] %>
 Person:: [[👤 <% tp.file.title.slice(14) %>]]
-Tags:: #work/everactive <% tp.file.cursor(3) %>
+Tags:: #work/<% tp.file.cursor(3) %>
 Links:: [[🗺 O3 MOC]]
 ___
 

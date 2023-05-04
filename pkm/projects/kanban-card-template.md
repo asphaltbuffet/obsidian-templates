@@ -1,3 +1,0 @@
-# <%tp.file.title%>
-
-## Notes

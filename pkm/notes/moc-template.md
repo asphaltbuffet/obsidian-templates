@@ -2,6 +2,7 @@
 aliases: 
 Created: <% tp.file.creation_date("yyyy-MM-DD") %>
 Modified: <% tp.file.last_modified_date("yyyy-MM-DD") %>
+template: moc-template-v1.1.0
 title: <% tp.file.title %>
 ---
 

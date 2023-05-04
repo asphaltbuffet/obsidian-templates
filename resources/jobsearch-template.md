@@ -1,11 +1,11 @@
 ---
 Created: <% tp.file.creation_date("yyyy-MM-DD") %>
 Modified: <% tp.file.creation_date("yyyy-MM-DD") %>
-template: jobsearch-template-v1.0.0
+template: jobsearch-template-v1.0.1
 title: 
 ---
 
-%% status will change as job search moves through process. 🟩 is ongoing, 🟨 is stalled, 🟥 is rejected %%
+%% status will change as job search moves through process. 🟦 to-do, 🟩 active, 🟨 waiting, 🟥 rejected, ✖ withdrawn %%
 Status:: #application/<% tp.file.cursor(2) %>
 Tags:: #jobsearch
 source:: <% tp.file.cursor(3) %>
@@ -31,32 +31,31 @@ Salary:: <% tp.file.cursor(7) %>
 
 ## Application
 
-```ad-note
-title: Response
-color: grey
-
-*put response from application here...*
-```
+> [!question] 
+> *put response from application here...*
 
 - [ ] *follow-up task details here*
 
 ## Phone Screen
 
-```ad-note
-title: Response
-color: grey
+> [!question] 
+> *put response from phone screen here…*
 
-*put response from phone screen here…*
-```
+- [ ] *follow-up task details here*
+
+## Assessement
+
+> [!question] 
+> *put response from assessment here…*
+
+- [ ] *follow-up task details here*
 
 ## Interview
 
-```ad-note
-title: Response
-color: grey
+> [!question] 
+> *put response from interview(s) here…*
 
-*put response from interview(s) here…*
-```
+- [ ] *follow-up task details here*
 
 ## Attachments
 
